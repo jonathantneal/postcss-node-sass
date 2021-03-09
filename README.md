@@ -49,7 +49,7 @@ Use [PostCSS Sass] as a plugin:
 
 ```js
 postcss([
-  require('@csstools/postcss-sass')(/* node-sass options */)
+  require('@csstools/postcss-sass')(/* dart-sass options */)
 ]).process(YOUR_CSS);
 ```
 
@@ -88,7 +88,7 @@ var postcss = require('gulp-postcss');
 gulp.task('css', function () {
   return gulp.src('./src/*.css').pipe(
     postcss([
-      require('@csstools/postcss-sass')(/* node-sass options */)
+      require('@csstools/postcss-sass')(/* dart-sass options */)
     ])
   ).pipe(
     gulp.dest('.')
@@ -113,7 +113,7 @@ grunt.initConfig({
   postcss: {
     options: {
       use: [
-        require('@csstools/postcss-sass')(/* node-sass options */)
+        require('@csstools/postcss-sass')(/* dart-sass options */)
       ]
     },
     dist: {
